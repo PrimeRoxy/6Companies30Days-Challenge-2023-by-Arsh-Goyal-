@@ -1,10 +1,10 @@
-2. Combination Sum with a twist
+// 2. Combination Sum with a twist
+
+// asked in Microsoft
+// This is a basic DFS technique used in its backtracking method and the Subset concept just increments in the limit of combination and elements 
 
 
-This is a basic DFS technique used in its backtracking method and the Subset concept just increments in the limit of combination and elements 
-
-
-solution :
+// solution :
 
 class Solution {
 public:
