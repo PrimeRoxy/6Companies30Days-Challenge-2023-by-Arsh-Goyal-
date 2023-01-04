@@ -1,8 +1,9 @@
-7. Scheduling a Course
+// 7. Scheduling a Course
 
-in this, we have to check cyclic DEADLOCK , Topic concept from Graph and DFS
+// asked in Microsoft
+// in this, we have to check cyclic DEADLOCK , Topic concept from Graph and DFS
 
-solution :
+// solution :
 
 class Solution {
     bool isCyclic(vector<vector<int>>& adj,vector<int>& visited,int curr)
