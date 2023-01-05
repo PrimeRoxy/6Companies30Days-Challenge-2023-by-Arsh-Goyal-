@@ -1,0 +1,15 @@
+// 13. Seat Arrangement in a SpiceJet Problem - Online OA February ‘22
+
+// asked in Microsoft
+// method included : Brainteser, DP, Math, Probality and statics
+
+// solution: 
+
+class Solution {
+public:
+    double nthPersonGetsNthSeat(int n) {
+        // The code attempts to return the number of seats that person 1 would get if they were to enter a room with n people.
+        return n == 1 ? 1 : 0.5;
+        
+    }
+};
