@@ -1,0 +1,47 @@
+// 2. Combination Sum with a twist
+
+// asked in Microsoft
+// This is a basic DFS technique used in its backtracking method and the Subset concept just increments in the limit of combination and elements 
+
+
+// solution :
+
+class Solution {
+public:
+    vector<vector<int>> ans;
+    // i = initialization
+    // n = number of subset 
+    // k = combination
+    void find(int i, int n, int k, vector<int>&temp)
+    {
+        if(n == 0 && k == 0)
+        {
+            ans.push_back(temp);
+            return;
+        }
+        if(n<0 || k<0 ){
+            return;
+        }
+        if(i ==10)
+        {
+            return;
+        }
+        // skiping the element
+        find(i+1, n, k, temp);
+
+        // picking the element
+        temp.push_back(i);
+        find(i+1, n-i, k-1,temp);
+
+        // backtracking
+        temp.pop_back();
+
+    }
+     
+    vector<vector<int>> combinationSum3(int k, int n) {
+        vector <int> temp;
+        find(1, n, k, temp);
+        return ans;
+        
+    }
+};
